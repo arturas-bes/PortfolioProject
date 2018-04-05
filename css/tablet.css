@@ -1,0 +1,98 @@
+.toggle-nav {
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    text-decoration: none;
+    float: left;
+    margin-right: 20px;
+    position: fixed;
+    top: 0;
+    left: 30;
+    z-index: 50;
+    color: white;
+}
+
+.toggle-nav:hover {
+    cursor: pointer;
+    color: orangered;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}
+
+#main-nav {
+    width: 150px;
+    height: 100vh;
+    margin-left: auto;
+    background: #ff45002e;
+    transform: translate(-150px, 0);
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+#main-nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#main-nav .nav-list {
+    margin-top: 70px;
+}
+
+.columns {
+    flex-direction: column;
+}
+
+.skills-row {
+    flex-direction: column;
+}
+
+.skills-row .left-column {
+    padding-top: 20px;
+}
+
+.my-skills {
+    padding: 10px;
+}
+
+.my-skills .skill-item {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.skills-row .right-column p {
+    width: 100%;
+}
+
+.projects-all {
+    flex-direction: column;
+}
+
+.project a {
+    font-size: 20px;
+}
+
+#contacts {
+    flex-direction: column;
+}
+
+.left-contact-col {
+    margin: 0px;
+    max-height: 100%;
+}
+
+.right-contact-col {
+    margin: 0px;
+    width: 100%;
+    font-size: 25px;
+}
+
+.social-icons {
+    flex-direction: row;
+    height: 50%;
+}
